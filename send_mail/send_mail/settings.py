@@ -125,7 +125,7 @@ STATIC_URL = 'static/'
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Load email config from JSON file
-CONFIG_PATH = os.path.join(BASE_DIR, "send_mail", "config", "config.json")
+CONFIG_PATH = os.path.join(BASE_DIR, "config", "config", "config.json")
 
 with open(CONFIG_PATH, "r") as config_file:
     config = json.load(config_file)
